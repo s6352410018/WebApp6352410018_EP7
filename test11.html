@@ -1,1 +1,114 @@
-Hi!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: limegreen;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        #btnCal,
+        #btnCancel {
+            width: 100px;
+            height: 30px;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+            transition: ease-out 0.3s;
+        }
+
+        #btnCal:hover {
+            background-color: gold;
+            color: rgb(145, 26, 224);
+            transform: translateY(-5px)
+        }
+
+        #btnCancel:hover {
+            background-color: darkblue;
+            color: white;
+            transform: translateY(-5px)
+        }
+
+        #btnCal {
+            background-color: rgb(42, 194, 42);
+        }
+
+        #btnCancel {
+            background-color: red;
+        }
+
+        hr {
+            background-color: limegreen;
+            height: 10px;
+            border: none;
+        }
+        #result{
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        div{
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Money Share แชร์เงินกันเถอะ</h1>
+    <table width="500">
+        <tr style="height: 50px;">
+            <td width="200" style="text-align: right; padding-right: 20px;">
+                ป้อนเงิน
+            </td>
+            <td>
+                <input type="text" name="" id="money"> บาท
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td width="200" style="text-align: right; padding-right: 20px;">
+                ป้อนคน
+            </td>
+            <td>
+                <input type="text" name="" id="person"> คน
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td width="200" style="text-align: right; padding-right: 20px;">
+
+            </td>
+            <td>
+                <button id="btnCal">คำนวณ</button>
+                <button id="btnCancel">ยกเลิก</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div>
+        แชร์เงินกันคนละ
+        <span id="result">
+            0.00
+        </span>
+        บาท
+    </div>
+
+
+
+
+
+    <script src="./js/script11.js"></script>
+</body>
+
+</html>
